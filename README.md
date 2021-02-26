@@ -8,6 +8,10 @@
 1) Изучить материалы, посвященные теме извлечения и сбора текстовых данных из социальных сетей - до 01.03.2021 года:
 Примеры материалов:
 
+https://medium.com/better-programming/twitter-sentiment-analysis-15d8892c0082
+
+https://towardsdatascience.com/twitter-sentiment-analysis-in-python-1bafebe0b566
+
 https://nauchkor.ru/pubs/kontekstnaya-obrabotka-dannyh-sotsialnyh-setey-587d36355f1be77c40d5896c
 
 https://www.ispras.ru/proceedings/docs/2014/26/1/isp_26_2014_1_439.pdf
