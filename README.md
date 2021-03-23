@@ -6,23 +6,12 @@
 План работы:
 
 1) Изучить материалы, посвященные теме извлечения и сбора текстовых данных из социальных сетей - до 01.03.2021 года:
-Примеры материалов:
 
+Пример:
 https://medium.com/better-programming/twitter-sentiment-analysis-15d8892c0082
 
-https://towardsdatascience.com/twitter-sentiment-analysis-in-python-1bafebe0b566
-
-https://nauchkor.ru/pubs/kontekstnaya-obrabotka-dannyh-sotsialnyh-setey-587d36355f1be77c40d5896c
-
-https://www.ispras.ru/proceedings/docs/2014/26/1/isp_26_2014_1_439.pdf
-
-https://www.ibm.com/developerworks/ru/library/ba-collect-analyze-social-data-app/index.html
-
-https://econophysica.ru/clients/automatic-collection-and-analysis-of-text-data/
-
-https://www.ibm.com/ru-ru/automation/data-capture?p1=Search&p4=43700052427790562&p5=b&cm_mmc=Search_Google-_-1S_1S-_-EP_RU-_-%2B%D1%81%D0%B1%D0%BE%D1%80%20%2B%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_b&cm_mmca7=71700000064827352&cm_mmca8=aud-382859943522:kwd-890265866819&cm_mmca9=CjwKCAiA65iBBhB-EiwAW253W3xfFIwgY7mIjsiz66vo061C0izwmI6u5N3fBsp2YQudAiyTeD3OUhoCjoIQAvD_BwE&cm_mmca10=425980216486&cm_mmca11=b&gclid=CjwKCAiA65iBBhB-EiwAW253W3xfFIwgY7mIjsiz66vo061C0izwmI6u5N3fBsp2YQudAiyTeD3OUhoCjoIQAvD_BwE&gclsrc=aw.ds
-
-https://www.osp.ru/iz/bigdata/articles/13046896
+Воспроизведение:
+https://colab.research.google.com/drive/1b_qdTlaS2pDJ2kz0yiWtT504QBrE6hs4
 
 2) Выбрать одну определенную социальную сеть и конкретный метод или инструмент извлечения и сбора текстовых данных из социальных сетей для фактического применения в работе - до 07.03.2021 года.
 
