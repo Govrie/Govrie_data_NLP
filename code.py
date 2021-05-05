@@ -8,10 +8,10 @@ import re
 import matplotlib.pyplot as plt
 
 # Twitter Api Credentials
-consumerKey = "wuUNfWouFtimj5l5PUk0uYcMu"
-consumerSecret = "we9LySp1FKVY9QBcPjlf9W2PL4abUS7M1tW44KkIO3m2ebFkuy"
-accessToken = "168671451-qpOiCpxSlxwGzHhn4afsQELIPcP4p8p2thL6k0xL"
-accessTokenSecret = "9CINzaz7MAq8XXxZQ49gksmCr8ttnTCG0cWaYgQ6MJBUd"
+consumerKey = "w****" # реальный ключ скрыт
+consumerSecret = "w***" # реальный ключ скрыт
+accessToken = "1***" # реальный ключ скрыт
+accessTokenSecret = "9***" # реальный ключ скрыт
 
 # Create the authentication object
 authenticate = tweepy.OAuthHandler(consumerKey, consumerSecret) 
@@ -131,3 +131,48 @@ plt.xlabel('Sentiment')
 plt.ylabel('Counts')
 df['Analysis'].value_counts().plot(kind = 'bar')
 plt.show()
+
+!pip3 install dostoevsky
+!python3 -m dostoevsky download fasttext-social-network-model
+
+from dostoevsky.tokenization import RegexTokenizer
+from dostoevsky.models import FastTextSocialNetworkModel
+
+tokenizer = RegexTokenizer()
+model = FastTextSocialNetworkModel(tokenizer=tokenizer)
+
+messages = df['Tweets'].apply(cleanTxt)
+
+results = model.predict(messages, k=2)
+message_skippy = []
+message_negative = []
+message_positive = []
+message_speech = []
+for message, sentiment in zip(messages, results):
+    senti = max(sentiment)
+    if senti == 'skip':
+      message_skippy.append(message)
+    if senti == 'negative':
+      message_negative.append(message)
+    if senti == 'positive':
+      message_positive.append(message)
+    if senti == 'speech':
+      message_speech.append(message)
+
+    #print(message, '->', senti)
+print('==============')
+print('Printing skipping tweets:')
+for i in range(len(message_skippy)):
+  print(i+1,') ', message_skippy[i])
+print('==============')
+print('Printing negative tweets:')
+for i in range(len(message_negative)):
+  print(i+1,') ', message_negative[i])
+print('==============')
+print('Printing positive tweets:')
+for i in range(len(message_positive)):
+  print(i+1,') ', message_positive[i])
+print('==============')
+print('Printing speech tweets:')
+for i in range(len(message_speech)):
+  print(i+1,') ', message_speech[i])
